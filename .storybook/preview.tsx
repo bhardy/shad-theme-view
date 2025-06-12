@@ -1,6 +1,7 @@
 import React from "react";
 import type { Preview, Decorator } from '@storybook/react-vite'
 import { DarkModeWrapper } from './DarkModeWrapper'
+import './CustomCssEditorGlobal'
 
 import '../src/index.css'
 
@@ -38,8 +39,8 @@ const preview: Preview = {
       toolbar: {
         icon: 'circlehollow',
         items: [
-          { value: 'light', icon: 'circlehollow', title: 'Light' },
-          { value: 'dark', icon: 'circle', title: 'Dark' },
+          { value: 'light', icon: 'circlehollow', title: 'Light Mode' },
+          { value: 'dark', icon: 'circle', title: 'Dark Mode' },
         ],
         showName: true,
       },
